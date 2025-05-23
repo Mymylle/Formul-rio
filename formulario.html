@@ -1,40 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
 </head>
 
 
 <body bgcolor="#6A5ACD">
     
     <header>
-        <h1>Formulários</h1>
+        <h1>PERFIL DO PACIENTE</h1>
         <br>
 
     </header>
 
     
-        <legend>Dados Pessoais</legend>
 <form action="" method="post">
-<label for="nome">Nome</label> <br>
-<input type="text" id="nome" name="">
-
-<label for="idade">Idade</label> 
-<input type="text" id="idade" name=""><br>
-
-
-<label for="nome">Data de aniversário</label> <br>
-<input type="text" id="nome" name="">
-
-</fieldset>
 <fieldset>
+    <label for="nome">Nome do paciente:</label> 
+    <input type="text" id="nome" name="nome">
+</fieldset>
+
+<br>
+<fieldset>
+    <label for="natura">Naturalidade:</label>
+    <input type="text" name="natura">
+</fieldset>
+<br>
+<fieldset>
+       <label for="niver">Data e horário da 1º consulta:</label> 
+       <input type="date" id="niver" name="niver">
+       <input type="time" name="hora">
+</fieldset>
+<br>
+    <fieldset>
+        <label for="origem">Origem:</label> <br>
+        <select name="origem" id="origem">
+        <option value="privado">Privado</option>
+        <option value="sus">SUS</option>
+    </select>
+    </fieldset>
+<br>
+    <fieldset>
+        <label for="farma">É acompanhado por algum farmacêutico em consultório?</label> <br>
+        <select id="farma"> <br>
+            <option value="nao">Não</option>
+            <option value="sim">Sim. Onde?</option> 
+            <input type="text" id="farma">
+</select>
+    </fieldset>
+<br>
+    <fieldset>
+        <label for="niver">Data de nascimento: </label> 
+        <input type="date" id="niver" name="niver">
+        <label for="idade">Idade:</label> 
+        <input type="number" name="idade">
+
+       <label for="genero">|  Gênero: </label>
+        <select  name="genero" id="genero">
+
+            <option  value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option> 
+        
+        </select>
+    </fieldset>
+<br>
+
+    <fieldset>
+        <label for="escola">Escolaridade:</label>
+        <input type="text" id="escolaridade"> 
+        <label for="ocupa">  |  Ocupação:</label>
+        <input type="text" id="ocupa"> 
+    </fieldset>
+<br>
+
+        <fieldset>
+            <label for="telefone">Telefone:</label>
+            <input maxlength="11" type="text" id="telefone">
+
+            <label for="peso">|  Peso</label> 
+            <input type="number" name="peso">
+
+            <label for="altura">Altura:</label>
+            <input type="number" name="altura">
+        </fieldset>
+<br>
+        <fieldset>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco"> <br>
+        </fieldset>     
+<br>
+        <fieldset>
+            <label for="moradores">Com quem mora?:</label> <br>
+            <input type="text" id="moradores">   
+        </fieldset>
+<br> 
+        <fieldset>
+            <label for="limitacoes">Limitações:</label> 
+                <input type="radio">
+                Nenhuma</input>
+                <input type="radio">
+                Locomoção</input>
+                <input type="radio">
+                Fala</input>
+                <input type="radio">
+                Visão</input>
+                <input type="radio">
+                Audição </input>
+                
+                <label for="outras"> Outras:</label>
+                <input type="radio" id="outras" name="outras"> 
+                <input type="text" id="outras" name="outras"> 
+
+        
+             
+<br>   
+        </fieldset>
+
+        <fieldset>
+            <label for="profi">Autonomia na gestão dos medicamentos:</label> <br>
+            <input type="text" id="niver"> <br>
     
-    <input type="button" value="enviar">
-    <label for="nome">Nome</label> <br>
-    <input type="text" id="nome" name="">
+        </fieldset>
+
+        <fieldset>
+            <label for="profi">Profissão:</label> <br>
+            <input type="text" id="niver"> <br>
+    
+        </fieldset>
+
+        <fieldset>
+            <label for="profi">Profissão:</label> <br>
+            <input type="text" id="niver"> <br>
+    
+        </fieldset>
+
+        <fieldset>
+            <label for="profi">Profissão:</label> <br>
+            <input type="text" id="niver"> <br>
+    
+        </fieldset>
+
+        <fieldset>
+            <label for="profi">Profissão:</label> <br>
+            <input type="text" id="niver"> <br>
+    
+        </fieldset>
+
+    </fieldset>
+    <input type="button" value="enviar"> <br>
 </form>
 
 </body>
